@@ -1,6 +1,6 @@
- Skills
+# Skills
 
-A collection of [Claude Skills](https://docs.claude.com) for reuse across projects. Each skill lives in its own folder under `skills/` and follows the standard layout: a `SKILL.md` with the instructions and metadata, plus an optional `references/` folder for supporting docs that load only when needed.
+A collection of Claude Skills for reuse across projects. Each skill lives in its own folder under `skills/` and follows the standard layout: a `SKILL.md` with the instructions and metadata, plus an optional `references/` folder for supporting docs that load only when needed.
 
 ## Available skills
 
@@ -8,6 +8,7 @@ A collection of [Claude Skills](https://docs.claude.com) for reuse across projec
 | --- | --- |
 | [`tufte-viz`](skills/tufte-viz/) | Design, build, and critique data visualizations using Edward Tufte's principles. Triggers on charts, graphs, dashboards, tables, and any visual display of data. |
 | [`exec-prose`](skills/exec-prose/) | Write and edit executive-level prose in the voice of a senior digital AI consultancy leader. Triggers on emails, memos, strategy notes, board papers, articles, and other professional writing. |
+| [`executivepitchcrafter`](skills/executivepitchcrafter/) | Turn raw insights, research, data, or client context into C-level executive deliverables such as one-page summaries, board readouts, LinkedIn articles, team briefs, and keynote outlines. Built on SCQA, the Pyramid Principle, and MECE, with a strictly enforced British essayistic prose style. Triggers on any request for an executive pitch, summary, deck, or keynote. |
 
 ## Using a skill
 
@@ -26,8 +27,14 @@ skills/
       tufte-principles.md
       analytical-design.md
   exec-prose/
+    README.md
     SKILL.md              # instructions + metadata
     exec-prose.skill      # packaged, installable
+  executivepitchcrafter/
+    README.md
+    SKILL.md              # instructions + metadata
+LICENSE
+README.md
 ```
 
 ## Contributing
@@ -36,4 +43,4 @@ To add a skill, create a new folder under `skills/` with its own `SKILL.md`, the
 
 ## License
 
-Released under the MIT License. See [LICENSE](LICENSE).
+Released under the MIT License. See LICENSE.
