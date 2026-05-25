@@ -11,6 +11,8 @@ A collection of Claude Skills for reuse across projects. Each skill lives in its
 | executivepitchcrafter | Turn raw insights, research, data, or client context into C-level executive deliverables such as one-page summaries, board readouts, LinkedIn articles, team briefs, and keynote outlines. Built on SCQA, the Pyramid Principle, and MECE, with a strictly enforced British essayistic prose style. Triggers on any request for an executive pitch, summary, deck, or keynote. |
 | whitepaper-to-social | Turn a whitepaper, report, essay, or article into derivative short-form social posts for LinkedIn, Substack Notes, and X. Presents a tickbox to choose platforms and a second question for volume, then produces posts at a fixed 1:3:5 ratio of LinkedIn to Substack Notes to X. Triggers on any request to repurpose or atomise long-form content into social posts. |
 | idea-refinement | Act as a strategic sounding board that pressure-tests a raw executive idea into a sharp, defensible concept through continuous, adaptive questioning, then produces a one-page concept brief. Triggers when bringing a half-formed idea, venture, strategy, or proposal to think through, pressure-test, or sharpen. |
+| client-engagement-to-collateral | Turn raw client engagement material such as notes, transcripts, or briefs into polished consulting deliverables: proposals, board readouts, cover emails, and discovery summaries. Confirms type and audience, then produces a Word document by default. Triggers on any request to turn engagement input into client-facing collateral. |
+| exec-clarity | Sharpen executive writing so it lands with a senior, time-poor reader. Flags what is weakening a draft and offers a tighter rewrite, learning the user's voice once and reusing it. Triggers on requests to tighten, clarify, or review professional writing before it goes out. |
 
 ## Using a skill
 
@@ -49,6 +51,20 @@ skills/
     references/
       question-bank.md
       brief-template.md
+  client-engagement-to-collateral/
+    README.md
+    SKILL.md              # instructions + metadata
+    client-engagement-to-collateral.skill   # packaged, installable
+    references/
+      deliverable-structures.md
+      house-style.md
+  exec-clarity/
+    README.md
+    SKILL.md              # instructions + metadata
+    exec-clarity.skill           # packaged, installable
+    references/
+      diagnostics.md
+      formats.md
 LICENSE
 README.md
 ```
