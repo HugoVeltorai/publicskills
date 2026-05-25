@@ -183,9 +183,7 @@ README.md
 
 To add a skill, create a new folder under `skills/` with its own `SKILL.md`, then add a row to the relevant table above.
 
-## Install all skills in one line
 
-npx skills add HugoVeltorai/publicskills
 
 ## About
 
